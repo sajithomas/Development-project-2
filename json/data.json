@@ -1,0 +1,31 @@
+{
+  "skills": [
+    {
+      "skillType": "Java",
+      "carID": "J2SE"
+    },
+    {
+      "skillType": "Hibernate",
+      "skillID": "HIB"
+    },
+    {
+      "skillType": "Java persistence API",
+      "skillID": "JPA"
+    },
+    {
+      "skillType": "JavaScript",
+      "skillID": "JS"
+    },
+    {
+      "skillType": "HTML",
+      "skillID": "HTML"
+
+    },
+
+    {
+      "skillType": "css",
+      "skillID": "css"
+
+    }
+  ]
+}

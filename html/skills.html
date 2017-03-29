@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel="stylesheet" type="text/css" href="../Style_Sheets/styles.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+        $.getJSON('../json/data.json', function(json) {
+
+            $.each(json.skills,function(key,value)
+            {
+                var option = $('<option />').val(value.skillID).text(value.skillType);
+                $("#skillset1").append(option);
+            });
+
+            $.each(json.skills,function(key,value)
+            {
+                var option = $('<option />').val(value.skillID).text(value.skillType);
+                $("#skillset2").append(option);
+            });
+
+            $.each(json.skills,function(key,value)
+            {
+                var option = $('<option />').val(value.skillID).text(value.skillType);
+                $("#skillset3").append(option);
+            });
+
+            $.each(json.skills,function(key,value)
+            {
+                var option = $('<option />').val(value.skillID).text(value.skillType);
+                $("#skillset4").append(option);
+            });
+
+            $.each(json.skills,function(key,value)
+            {
+                var option = $('<option />').val(value.skillID).text(value.skillType);
+                $("#skillset5").append(option);
+            });
+
+        });
+
+        function myfunction() {
+window.location='../html/contact.html';
+
+        }
+    </script>
+
+
+</head>
+<body>
+
+<ul class="topnav">
+    <li><a href="../html/Home.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a class="active" href="./skills.html">Skills</a></li>
+    <li><a  href="./contact.html">ContactMe</a></li>
+</ul>
+
+<form method="post" action="../html/skills.html" name="Myform">
+    <div>
+        <div style="background-color:#FDFBEE;margin:auto;border:2px solid black;width:800px;height:700px"><p><center style="font-size:25px">Skill Set</center></p>
+
+            <table border="2px solid black" align="center">
+                <tr>
+                   <th>
+                       Skill
+                   </th>
+                    <th>
+                        Number of years of experience
+                    </th>
+                </tr>
+
+                <tr>
+                    <td ALIGN="center">
+                        <select id="skillset1">
+
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="1">1 Year</option>
+                            <option value="2">2 Year</option>
+                            <option value="3">3 Year</option>
+                            <option value="4">4 Year</option>
+                            <option value="5">5+ Year</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td ALIGN="center">
+                        <select id="skillset2">
+
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="1">1 Year</option>
+                            <option value="2">2 Year</option>
+                            <option value="3">3 Year</option>
+                            <option value="4">4 Year</option>
+                            <option value="5">5+ Year</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td ALIGN="center">
+                        <select id="skillset3">
+
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="1">1 Year</option>
+                            <option value="2">2 Year</option>
+                            <option value="3">3 Year</option>
+                            <option value="4">4 Year</option>
+                            <option value="5">5+ Year</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td ALIGN="center">
+                        <select id="skillset4">
+
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="1">1 Year</option>
+                            <option value="2">2 Year</option>
+                            <option value="3">3 Year</option>
+                            <option value="4">4 Year</option>
+                            <option value="5">5+ Year</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td ALIGN="center">
+                        <select id="skillset5">
+
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="1">1 Year</option>
+                            <option value="2">2 Year</option>
+                            <option value="3">3 Year</option>
+                            <option value="4">4 Year</option>
+                            <option value="5">5+ Year</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+            </table>
+            <br>
+
+            <center>
+
+                <textarea placeholder="please include other skills and number of years of experience" rows="7" cols="70"></textarea>
+
+
+            </center>
+            <br>
+            <center><input type="button" value="submit" onclick="myfunction()"></center>
+
+
+
+        </div>
+    </div>
+</form>
+
+</select>
+
+
+
+
+<footer>Copyright © Saji Thomas</footer>
+
+</body>
+</html>

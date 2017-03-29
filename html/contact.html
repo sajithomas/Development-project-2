@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Contact Form</title>
+        <script src="../js/tcf.js"></script>
+        <link rel="stylesheet" href="../Style_Sheets/styles.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+    <ul class="topnav">
+        <li><a  href="../html/Home.html">Home</a></li>
+         <li><a href="./about.html">About</a></li>
+         <li><a href="./skills.html">Skills</a></li>
+        <li><a class="active" href="./contact.html">ContactMe</a></li>
+    </ul>
+
+    <form action="https://formspree.io/rakeshkotha46@gmail.com" method="POST" onsubmit="return ValidationEvent()">
+        <div style="background-color:#FDFBEE;margin:auto;border:2px solid black;width:800px;height:700px"><p><center style="font-size:25px">Please fill your details</center></p>
+            <table  align="center">
+
+               <tr>
+                    <td ALIGN="center">
+                        <label>Full Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+               </tr>
+
+                <tr>
+                   <td ALIGN="center">
+                         <label>Email</label>
+                   </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td ALIGN="center">
+                        <label>Subject</label>
+                    </td>
+                    <td>
+                        <input type="text" id="subject" name="subject">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td ALIGN="center">
+                        <label>Descripton:</label>
+                    </td>
+                    <td style="vertical-align: top">
+                        <textarea name="desc" rows="7" cols="30"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td ALIGN="center">
+                        <label>Contact no:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="contact" name="contact">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td ALIGN="center">
+                        <label>Reason for contact</label>
+                    </td>
+                    <td>
+                        <input type="text" id="contactReason" name="contact-reason">
+                    </td>
+                </tr>
+            </table>
+            <br>
+                <center><button type="submit" name="submit" onclick="return ValidationEvent()">Submit</button></center>
+            </div>
+        </div>
+    </form>
+    <footer>Copyright © Saji Thomas</footer>
+    </body>
+</html>
